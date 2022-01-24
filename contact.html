@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/fontawesome/css/all.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="main">
+      <section class="main__item main__item--navbar-bg">
+        <nav class="navbar container">
+          <a class="navbar__logo" href="index.html"><img src="assets/img/bhromaon-logo.png" alt="logo"></a>
+          <i class="fas fa-bars toggle" onclick="toggleMenuResponsive()"></i>
+          <ul id="myNavbar" class="menu">
+            <li class="menu__item"><a class="menu__link aleo-font white" href="">Who We Are</a></li>
+            <li class="menu__item"><a class="menu__link aleo-font white" href="">What We Do</a></li>
+            <li class="menu__item"><a class="menu__link aleo-font white" href="">Travel With Us</a></li>
+            <li class="menu__item"><a class="menu__link aleo-font white" href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </section>
+
+
+      <section class="main__item main__item--contact-bg">
+        <div class="contact container">
+          <form action="" class="form">
+              <div class="form__item form__item--half">
+                <label class="form__label" for="name" >Name</label> 
+                <input class="form__input" type="text" id="text" placeholder="Enter your name" required>
+              </div>
+              <div class="form__item form__item--half">
+                <label class="form__label" for="Surname" >Surname</label> 
+                <input class="form__input" type="text" id="surname" placeholder="Enter your surname" required>
+              </div>
+            <div class="form__item">
+              <label class="form__label" for="email" >Email</label>
+              <input class="form__input" type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form__item">
+              <label class="form__label" for="textarea">Your Message</label>
+              <textarea class="form__input" name="textarea" id="textarea" cols="30" rows="10" placeholder="Enter your message" required></textarea>
+            </div>
+            <div class="form__item">
+              <button type="submit" class="btn btn--color">Submit</button>
+            </div>
+          </form>
+          </div>
+      </section>
+      
+    </main>
+    
+</body>
+</html>
+
+<script>
+  function toggleMenuResponsive() {
+    var navbar = document.getElementById('myNavbar');
+    if (navbar.className === 'menu') {
+      navbar.className += ' responsive';
+    } else {
+      navbar.className = 'menu';
+    }
+  }
+  </script>
